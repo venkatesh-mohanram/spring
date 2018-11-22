@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns = "http://www.springframework.org/schema/beans"
+   xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation = "http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+	<bean id="dataSource" class ="org.apache.commons.dbcp2.BasicDataSource" destroy-method="close">
+		<property name="driverClassName" value="com.mysql.cj.jdbc.Driver"/>
+		<property name="url" value="jdbc:mysql://icodenext-dev.cl4wdyonohvj.us-east-2.rds.amazonaws.com:3306/vasi_learning?useSSL=false"/>
+		<property name="username" value="root"/>
+		<property name="password" value="password"/>	
+		<property name="initialSize" value="10" />        
+        <property name="maxIdle" value="10" />
+        <property name="minIdle" value="5" />
+	</bean>
+	
+	<!-- <bean id="dataSource" class ="org.springframework.jdbc.datasource.DriverManagerDataSource">
+		<property name="driverClassName" value="com.mysql.jdbc.Driver"/>
+		<property name="url" value="jdbc:mysql://icodenext-dev.cl4wdyonohvj.us-east-2.rds.amazonaws.com:3306/ICN_MDB"/>
+		<property name="username" value="root"/>
+		<property name="password" value="password"/>		
+	</bean> -->
+</beans>
