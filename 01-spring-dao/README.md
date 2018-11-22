@@ -3,6 +3,7 @@
 
 A simple JAX-RS project built on top of Grizzly server to show the usages of Spring Dao functionality. 
 
+[![Build Status](https://travis-ci.org/venkatesh-mohanram/spring.svg?branch=master)](https://travis-ci.org/venkatesh-mohanram/spring)
 
 ## Getting started
 
